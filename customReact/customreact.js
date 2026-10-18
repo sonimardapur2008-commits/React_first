@@ -16,19 +16,6 @@ function customRender(reactElement, container){
 
 }
 
-function customRender2(reactElement2, container){
-
-    const domElement = document.createElement(reactElement2.type)
-    domElement.innerHTML = reactElement2.children
-
-    for(const prop in reactElement2.props){
-        if(prop === 'children') continue;
-        domElement.setAttribute(prop, reactElement2.props[prop]);
-    }
-    container.appendChild(domElement)
-
-}
-
 const reactElement = {
     type: 'a',
     props: {
@@ -39,17 +26,6 @@ const reactElement = {
 }
 
 
-const reactElement2 = {
-    type: 'a',
-    props: {
-        href: 'https://flipkart.com',
-        target: '_blank'
-    },
-    children: "Click here to go on flipkart"
-}
-
 const mainContainer = document.querySelector('#root')
-const mainContainer2 = document.querySelector('#root')
 
 customRender(reactElement, mainContainer)
-customRender2(reactElement2, mainContainer2)

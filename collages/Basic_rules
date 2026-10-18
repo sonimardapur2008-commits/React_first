@@ -3,3 +3,8 @@
 // The files (like chai.jsx) should be .jsx type
 
 // <> fragment - when you have to return multiple element then just wrap them in it
+
+// vitereact -- it is the normal react we will use 
+
+// custom react is our owm (made by us) library like react
+// custom ka matlab - apne according bnaya hua

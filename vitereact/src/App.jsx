@@ -1,12 +1,17 @@
 import Chai from "./chai"
-import Chai2 from "./chai2"
 
 function App() {
+
+  const username = "Soni"
+
   return (
     <>
 
-    <Chai />
-    <h1>Chai is in heading h1.</h1>
+    <h1>My name is {username}.</h1>
+    <p> In this curly brackets you have to  write valuated expressions 
+      because ye prebuilt hi aise simple evaluated expressions ko as an input lene ke liye 
+      implemented hota hai.
+    </p>
     
     </>
   )
@@ -14,6 +19,3 @@ function App() {
 
 export default App
 
-
-//<> fragment- to return multiple elements wrap
-//  them in it
