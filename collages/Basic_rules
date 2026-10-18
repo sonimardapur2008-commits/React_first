@@ -1,0 +1,5 @@
+// The function name should start from a capital letter.
+
+// The files (like chai.jsx) should be .jsx type
+
+// <> fragment - when you have to return multiple element then just wrap them in it

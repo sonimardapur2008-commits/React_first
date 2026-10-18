@@ -5,3 +5,6 @@ function Chai(){
 }
 
 export default Chai
+
+//file name should be .jsx and functions names 
+// should start by a capital letter
