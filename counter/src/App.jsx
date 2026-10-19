@@ -1,37 +1,30 @@
 import { useState } from 'react'
 
-
 function App() {
+    let [counter, setCounter] = useState(0)
+    const addValue = () => {
+        // counter =counter + 1;
+        // setCounter(counter);
+        setCounter(counter+1);
+    }
 
+    const removeValue = () => {
+        setCounter(counter-1);
+    }
 
-  let [counter, setCounter] = useState(15)
-
-
-  const addValue = () => {
-    if(counter<20) counter = counter +1
-    setCounter(counter)
-  }
-  const subValue = () => {
-    if(counter>0) counter = counter -1;
-    setCounter(counter)
-  }
-
-  return (
-
+    return(
     <>
-      
-      <h1>Chai aur React</h1>
-      <h2>counter value: {counter}</h2>
-
-      <button
-      onClick={addValue}
-      >Add value</button>
-      <br />
-      <button
-      onClick={subValue}
-      >Remove value</button>
+        <h1>Chai aur Code</h1>
+        <h2>Counter value is {counter}</h2>
+        <button
+        onClick={addValue}
+        >add value</button>
+        <br />
+        <button
+        onClick={removeValue}
+        >remove value</button>
     </>
-  )
+    )
 }
 
 export default App
