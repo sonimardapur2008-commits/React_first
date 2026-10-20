@@ -5,7 +5,11 @@ import viteLogo from './assets/vite.svg'
 import './App.css'
 import Mountain from './components/Mountain'
 
+const arr = ["Soni", "Moni", "Devarsh"]
+const arr2 = ["Devarsh", "Moni", "Soni"]
 
+const pp="For fun";
+const p2="Same";
 
 function App() {
 
@@ -14,8 +18,10 @@ function App() {
   return (
     <>
       <h1 className="bg-green-400 text-black text-2xl rounded-xl p-4">Tailwind Test</h1>
-      
-      <Mountain channel="something" />
+      <div className="flex">
+        <Mountain channel={arr}  Adventure={pp}/>
+        <Mountain channel={arr2}/>
+      </div>
 
     </>
   )

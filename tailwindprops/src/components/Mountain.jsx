@@ -1,4 +1,4 @@
-function Mountain({channel}) {
+function Mountain({channel, Adventure = "Pass the value"}) {
   console.log(channel);
 
     const styles = {
@@ -105,16 +105,16 @@ function Mountain({channel}) {
             <div style={styles.page}>
                 <div style={styles.card}>
         <div style={styles.image}>
-         Mountain 
+         {channel[0]}
         </div>
 
         <div style={styles.content}>
           <span style={styles.category}>
-            ADVENTURE
+            {channel[1]}
           </span>
 
           <h1 style={styles.heading}>
-            Mountain
+           {channel[2]}
           </h1>
 
           <p style={styles.description}>
@@ -131,14 +131,14 @@ function Mountain({channel}) {
 
           <div style={styles.footer}>
             <span style={styles.tag}>
-              Adventure
+              {Adventure || "Pass the value"}
             </span>
 
             <button
               style={styles.button}
-              onClick={() => alert("Let's start your adventure!")}
+              onClick={() => alert("Are You Sure!!")}
             >
-              Book Now →
+              Let's Book/Register →
             </button>
           </div>
         </div>
