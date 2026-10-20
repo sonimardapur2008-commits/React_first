@@ -3,13 +3,14 @@ import { useState } from 'react'
 function App() {
     let [counter, setCounter] = useState(0)
     const addValue = () => {
-        // counter =counter + 1;
-        // setCounter(counter);
+        setCounter(counter+1);
         setCounter(counter+1);
     }
 
     const removeValue = () => {
-        setCounter(counter-1);
+        setCounter(counter => counter+1);
+        setCounter(counter => counter+1);
+        setCounter(counter+1);
     }
 
     return(
@@ -18,11 +19,14 @@ function App() {
         <h2>Counter value is {counter}</h2>
         <button
         onClick={addValue}
-        >add value</button>
+        >add value {counter}</button>
         <br />
         <button
         onClick={removeValue}
-        >remove value</button>
+        >remove value {counter}</button>
+
+        <br />
+        <p>counter = {counter}</p>
     </>
     )
 }
